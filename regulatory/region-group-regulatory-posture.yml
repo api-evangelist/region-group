@@ -1,0 +1,78 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+note: >-
+  The only legal page linked from regiongroup.au is a PDF Privacy Policy (Owner "SCA Legal", Application
+  "SCA Property Group & SURF Funds", Version 8, July 2021; Region Group's former name was SCA Property Group).
+  It is an Australian Privacy Act policy for tenants, investors, workers and visitors, not an API/service
+  agreement. Quotes below are copied from the PDF text with line wraps joined.
+signals:
+  data_subject_request:
+    url: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+    section: '12. Access to and correction of personal information held by the Group'
+    channel: privacy.officer@scaproperty.com.au
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (section 13)
+    evidence:
+    - source: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If an individual wishes to access personal information that the Group holds about them or to correct
+        any errors or omissions in that information, they should contact the Privacy Officer.
+    note: >-
+      Establishes access and correction rights via the Privacy Officer; no response timeframe and no deletion
+      or portability right is stated. Requests may require writing, photo ID and a signed enquiry form.
+  data_residency:
+    url: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+    section: '10. Does my personal information leave Australia?'
+    evidence:
+    - source: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The Group will only send your personal information outside Australia: if we are authorised to do so by
+        law; for any of the purposes set out in this policy (but only to parties that are subject to obligations
+        in relation to personal information no less onerous than those in this policy); or if you have consented
+        to us doing so.
+    note: >-
+      A conditional cross-border transfer statement, not a residency commitment: data may leave Australia under
+      three stated conditions; no countries or recipients are named.
+  incident_notification:
+    url: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+    section: '16. Notifiable Data Breaches scheme'
+    stated_sla: as soon as practicable
+    evidence:
+    - source: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        In the event of any loss or unauthorised access or disclosure of your personal information that is likely
+        to result in serious harm to you, the Group will investigate and notify you and the Australian Information
+        Commissioner as soon as practicable, in accordance with the Privacy Act.
+    note: Commits to notifying affected individuals and the OAIC under the Notifiable Data Breaches scheme; no fixed hour count.
+  data_retention:
+    url: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+    section: '4. Why does the Group collect the information and what if I don’t provide it? (Generally)'
+    evidence:
+    - source: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The Group may be required to hold this information for at least 7 years. Where the Group is no longer
+        required to keep the personal information or no longer needs it, it will take reasonable steps to destroy
+        the personal information or de-identify it.
+    note: States a minimum ~7-year retention driver and destruction/de-identification at end of need; no per-category schedule.
+  subprocessors:
+    url: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+    section: '9. To whom is my personal information disclosed?'
+    evidence:
+    - source: https://regiongroup.au/wp-content/uploads/2022/12/Privacy-Policy_July-2021.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The Group does not provide your personal information to third parties, except as stated below.
+    note: >-
+      Lists recipient categories (e.g. "third party suppliers and service providers") and, in section 14, names
+      registry providers Link and Boardroom; no maintained subprocessor list is published.

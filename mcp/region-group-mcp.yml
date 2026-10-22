@@ -1,0 +1,23 @@
+name: Region Group MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No official MCP server (hosted or local) was found for Region Group (ASX: RGN), an Australian
+  retail-property REIT. The company publishes no public API or OpenAPI contract, so there are no
+  operations to derive a candidate tool list from.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+evidence:
+- url: https://regiongroup.au/.well-known/mcp.json
+  status: 404
+  checked: '2026-10-22'
+- url: https://regiongroup.au/llms.txt
+  status: 404
+  checked: '2026-10-22'
+- note: preflight contract_discovery on regiongroup.au and api.regiongroup.au reported mcp absent, openapi absent
+- note: web search for a Region Group MCP server or developer API returned no provider-owned results

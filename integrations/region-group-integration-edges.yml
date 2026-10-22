@@ -1,0 +1,24 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/region-group/integrations
+- https://n8n.io/integrations/region-group/
+- https://composio.dev/toolkits/region-group
+- https://monid.ai/tools/region-group
+checked:
+- https://regiongroup.au/ (HTTP 200) - homepage names no integrations, partners-as-integrations, API or developer
+  links
+- https://regiongroup.au/developers/ (HTTP 403)
+- https://regiongroup.au/api/ (HTTP 403)
+- https://zapier.com/apps/region-group/integrations (HTTP 404)
+- https://www.make.com/en/integrations/region-group (HTTP 403) - make.com refuses scripted fetches; no listing could
+  be read
+- https://composio.dev/toolkits/region-group
+- https://monid.ai/tools/region-group
+- https://n8n.io/integrations/region-group/
+- https://zapier.com/apps/region-group/integrations
+summary: Region Group (ASX:RGN) is a retail-property REIT with no public API, developer portal or integrations page;
+  no marketplace listing was found.
+marketplace_apps: []
+edges: []
+templates: []

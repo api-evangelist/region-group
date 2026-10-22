@@ -1,0 +1,15 @@
+generated: '2026-10-22'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: regiongroup.au
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan 10 01:45:05 2027 GMT
+  hsts: false
+domains:
+- domain: regiongroup.au
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

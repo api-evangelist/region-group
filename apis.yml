@@ -1,23 +1,88 @@
 aid: region-group
+
 name: Region Group
-description: 'Region Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Region Group (ASX: RGN) is an Australian real estate investment trust that owns and manages a geographically
+  diverse portfolio of convenience-based, supermarket-led essential retail shopping centres across Queensland, New South Wales,
+  Victoria, South Australia, Western Australia and Tasmania. The responsible entity is Region RE Limited (ACN 158 809 851),
+  and the group is a stapled structure of Region Management Trust and Region Retail Trust (formerly SCA Property Group). Its
+  website publishes portfolio, investor, sustainability and ASX announcement information; no public API, developer portal
+  or API documentation was found on regiongroup.au.'
+
 url: https://raw.githubusercontent.com/api-evangelist/region-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- REIT
+- Retail Property
+- Shopping Centres
+- Australia
+- ASX Listed
+- Investment
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://regiongroup.au/wp-content/uploads/2026/08/RegionGroup_containedBlue_logo_RGB.png
+
 common:
+- type: WellKnown
+  url: well-known/region-group-well-known.yml
+- type: Hosts
+  url: hosts/region-group-hosts.yml
+- type: Vendors
+  url: vendors/region-group-vendors.yml
+- type: DomainSecurity
+  url: security/region-group-domain-security.yml
 - type: Website
   url: https://regiongroup.au/
+- type: Support
+  url: https://regiongroup.au/contact-us/
+- type: News
+  url: https://regiongroup.au/news-media/
+- type: Careers
+  url: https://regiongroup.au/about-us/careers/
+- type: PrivacyPolicy
+  url: https://regiongroup.au/wp-content/uploads/2025/12/Privacy-Policy-September-2025.pdf
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Homepage titled "Home - Region Group" names Region RE Limited / Region Group (RGN). No API, developer portal, docs
+    or GitHub found on the site; pointers limited to what the site links.
+  evidence:
+  - url: https://regiongroup.au/
+    status: 200
+  - url: https://regiongroup.au/contact-us/
+    status: 200
+  - url: https://regiongroup.au/news-media/
+    status: 200
+  - url: https://regiongroup.au/about-us/careers/
+    status: 200
+  - url: https://regiongroup.au/wp-content/uploads/2025/12/Privacy-Policy-September-2025.pdf
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

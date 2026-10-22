@@ -1,0 +1,41 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.regiongroup.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: regiongroup.au
+  role: api
+  relation: own
+- host: regiongroup.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Support
+  - News
+  - Careers
+  - PrivacyPolicy
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: regiongroup.au
+  role: website
+  relation: own
